@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articolo 1 - Costituzione Italiana</title>
+    <title>La Costituzione Italiana e il Lavoro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
-        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Merriweather', 'serif'] } } } }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Merriweather', 'serif'] }
+                }
+            }
+        }
     </script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
 
     <div class="flex h-2 w-full">
         <div class="w-1/3 bg-green-600"></div>
@@ -19,47 +25,70 @@
         <div class="w-1/3 bg-red-600"></div>
     </div>
 
-    <nav class="bg-white shadow-sm py-4 mb-8">
-        <div class="container mx-auto px-4 flex justify-between items-center max-w-4xl">
-            <a href="index.html" class="text-blue-700 hover:text-blue-900 font-semibold transition-colors">
-                <i class="fa-solid fa-arrow-left mr-2"></i>Torna alla Home
-            </a>
-            <span class="text-gray-400 font-serif text-sm">Costituzione Italiana</span>
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 text-center shadow-lg">
+        <div class="container mx-auto px-4">
+            <i class="fa-solid fa-landmark text-5xl mb-4 opacity-80"></i>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 font-serif drop-shadow-md">I Fondamenti del Lavoro</h1>
+            <p class="text-lg md:text-xl font-light opacity-90">Ed. Civica - Analisi costituzione<br> <span class="text-[12px]">Albanese S., Magaletti A., Mariani N., Scanni F. e Squeo C.</span></p>
         </div>
-    </nav>
+    </header>
 
-    <main class="container mx-auto px-4 pb-16 max-w-4xl">
-        <div class="bg-white shadow-xl rounded-2xl overflow-hidden border border-gray-100">
-            
-            <div class="bg-green-50 px-8 py-6 border-b border-green-100">
-                <h1 class="text-4xl font-bold text-green-800 font-serif flex items-center">
-                    <i class="fa-solid fa-scale-balanced mr-4 opacity-70"></i> Articolo 1
-                </h1>
-            </div>
+    <main class="container mx-auto px-4 py-12 max-w-5xl flex-grow">
+        <section class="mb-12 text-center bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <h2 class="text-3xl font-semibold mb-6 text-blue-900"><i class="fa-solid fa-book-open mr-2"></i>Introduzione</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                La <i class="text-blue-700"><a href="https://www.senato.it/istituzione/la-costituzione">Costituzione della Repubblica Italiana</a></i> pone il lavoro come pietra angolare della nostra società. 
+                In questo percorso di studio, analizzeremo il profondo significato etico, giuridico e sociale 
+                che i Padri Costituenti hanno attribuito al lavoro, garantendo diritti, doveri e tutele fondamentali.
+            </p>
+        </section>
 
-            <div class="p-8">
-                <div class="relative bg-gray-50 border-l-8 border-green-600 p-8 mb-10 rounded-r-lg shadow-sm">
-                    <i class="fa-solid fa-quote-left text-4xl text-green-200 absolute top-4 left-4"></i>
-                    <blockquote class="relative z-10 text-2xl italic font-serif text-gray-800 leading-snug pl-8">
-                        «L'Italia è una Repubblica democratica, fondata sul lavoro.<br><br>
-                        La sovranità appartiene al popolo, che la esercita nelle forme e nei limiti della Costituzione.»
-                    </blockquote>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="articolo1.html" class="group block bg-white p-8 rounded-xl shadow-md border-t-4 border-green-600 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-100 p-3 rounded-full text-green-700 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-scale-balanced text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold ml-4 text-gray-800">Articolo 1</h3>
                 </div>
+                <p class="text-gray-600">Il fondamento democratico della Repubblica e il significato del lavoro per l'Italia.</p>
+            </a>
 
-                <article class="prose lg:prose-xl mx-auto text-gray-700">
-                    <h2 class="text-2xl font-semibold text-gray-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-pen-nib text-green-600 mr-2"></i> Il significato di lavoro per l'Italia
-                    </h2>
-                    <p class="mb-4 text-justify leading-relaxed">
-                        Affermare che l'Italia è "fondata sul lavoro" rappresenta una rottura storica rispetto ai regimi passati. I Padri Costituenti scelsero di non fondare la Repubblica sul censo, sulla nobiltà di nascita o sulla proprietà, bensì sull'impegno quotidiano dei suoi cittadini. 
-                    </p>
-                    <p class="mb-4 text-justify leading-relaxed">
-                        Il lavoro viene qui inteso nel senso più ampio e nobile del termine: è lo strumento attraverso il quale ogni individuo esprime la propria personalità e contribuisce al progresso materiale e spirituale della nazione. Non è concepito semplicemente come un mezzo di sussistenza, ma come il primo principio di legittimazione della cittadinanza democratica e della dignità umana.
-                    </p>
-                </article>
-            </div>
+            <a href="articolo4.html" class="group block bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-600 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-handshake-angle text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold ml-4 text-gray-800">Articolo 4</h3>
+                </div>
+                <p class="text-gray-600">L'impegno dello Stato nella promozione, il diritto e il dovere civico di lavorare.</p>
+            </a>
+
+            <a href="articolo35.html" class="group block bg-white p-8 rounded-xl shadow-md border-t-4 border-red-600 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="bg-red-100 p-3 rounded-full text-red-700 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold ml-4 text-gray-800">Articolo 35</h3>
+                </div>
+                <p class="text-gray-600">La tutela universale del lavoro in tutte le sue forme, la formazione e l'emigrazione.</p>
+            </a>
+
+            <a href="articolo37.html" class="group block bg-white p-8 rounded-xl shadow-md border-t-4 border-purple-600 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="bg-purple-100 p-3 rounded-full text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold ml-4 text-gray-800">Articolo 37</h3>
+                </div>
+                <p class="text-gray-600">Parità di diritti, tutela delle donne lavoratrici e dei minori sul posto di lavoro.</p>
+            </a>
         </div>
     </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-8 mt-12 border-t-4 border-blue-900">
+        <p>&copy; 2026 Progetto di Studio sulla Costituzione Italiana</p>
+    </footer>
 
 </body>
 </html>
